@@ -1,0 +1,24 @@
+/* 设置表格样式 */
+#stock-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#stock-table th, #stock-table td {
+    border: 1px solid #ddd;
+}
+/* 设置表头样式 */
+#stock-table th {
+    background-color: rgba(0, 0, 0, 0.1); /* 表头背景透明度为 0.1 */
+    color: lightcoral; /* 表头文字颜色 */
+    text-align: center; /* 文字居中对齐 */
+    padding: 10px; /* 内边距 */
+}
+
+/* 设置表格内容样式 */
+#stock-table td {
+    text-align: center; /* 文字居中对齐 */
+    padding: 8px; /* 内边距 */
+    color: whitesmoke;
+}
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../assets/css/register_styles.css">
+    <link rel="stylesheet" href="../plugins/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <a id="registerMain" href="#">股票交易系统</a>
+        </h1>
+    </div>
+    <div class="container">
+        <h2>注册</h2>
+        <form id="registerForm">
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username" required>
+            <label for="pwd">密码</label>
+            <input type="password" id="pwd" name="password" required>
+            <label for="confirmPassword">确认密码</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <input type="submit" value="注册">
+        </form>
+        <div class="footer">
+            已经创建账户? <a href="login.html">点此登录</a>.
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../assets/js/register_script.js"></script>
+    <script src="../assets/js/button_scripts.js"></script>
+</body>
+</html>

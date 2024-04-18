@@ -1,0 +1,73 @@
+/* 整体背景图 */
+body {
+    background-image: url('../../assets/img/content.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 调整背景图片大小 */
+    background-position: center; /* 将背景图片居中 */
+}
+
+.countdown-text {
+    color: lightcoral !important; /* 设置文字颜色为红色 */
+}
+
+/* 内容区域 */
+.content-wrapper {
+    background-color: transparent !important; /* 使页脚透明 */
+}
+
+/* 底部页脚 */
+.main-footer {
+    background-color: transparent !important; /* 使页脚透明 */
+}
+
+.main-header {
+    background-color: transparent !important; /* 使页脚透明 */
+}
+
+
+/* Container */
+.container-fluid {
+    background-color: rgba(255, 255, 255, 0.2); /* 添加半透明的白色覆盖层 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* User balance section */
+.user-balance {
+    background-color: #f8f9fa; /* 背景颜色为浅灰色 */
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* 添加半透明的白色覆盖层 */
+    color: palevioletred;
+}
+
+.user-balance p {
+    margin-bottom: 0;
+}
+
+/* Table */
+.table-bordered {
+    border: 1px solid #dee2e6; /* 边框颜色为淡灰色 */
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明的白色 */
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6; /* 上边框颜色为淡灰色 */
+    color: lightyellow;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6; /* 底部边框颜色为淡灰色 */
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6; /* 表格主体之间的边框颜色为淡灰色 */
+}

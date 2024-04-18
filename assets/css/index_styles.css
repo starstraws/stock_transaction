@@ -1,0 +1,51 @@
+/* 新功能的容器样式 */
+#stock-table-container {
+    margin-top: 20px;
+}
+
+/* 表格样式 */
+.stock-table {
+    width: 100%;
+}
+
+/* 表格单元格样式 */
+.stock-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* 整体背景图 */
+body {
+    background-image: url('../../assets/img/content.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 调整背景图片大小 */
+    background-position: center; /* 将背景图片居中 */
+}
+
+.countdown-text {
+    color: lightcoral !important; /* 设置文字颜色为红色 */
+}
+.button-text{
+    color: whitesmoke !important;
+}
+
+/* 内容区域 */
+.content-wrapper {
+    background-color: transparent !important; /* 使页脚透明 */
+}
+
+/* 底部页脚 */
+.main-footer {
+    background-color: transparent !important; /* 使页脚透明 */
+}
+
+.main-header {
+    background-color: transparent !important; /* 使页脚透明 */
+}
+
+
+/* Container */
+.container-fluid {
+    background-color: rgba(255, 255, 255, 0.2); /* 添加半透明的白色覆盖层 */
+    padding: 20px;
+    border-radius: 10px;
+}

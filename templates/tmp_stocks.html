@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>金融交易系统 | 大盘数据</title>
+  <link rel="stylesheet" href="../assets/css/index_styles.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../plugins/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../plugins/css/adminlte.min.css">
+  <link href="../plugins/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link countdown-text" href="#" role="button" id="countdown" ></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link countdown-text" href="#" role="button" id="countdown2" ></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link button-text" href="#" id="loginButton">登录</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button-text" href="#" id="registerButton">注册</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button-text" href="#" id="logoutButton" >注销</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a class="brand-link">
+      <img src="../assets/img/logo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">金融交易系统</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../assets/img/user.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a id="usernameLink" href="#" class="d-block">游客</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <p>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active" id="marketButton">
+              <p>大盘数据</p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="shanghaiStocksTrigger">
+                  <p>沪市</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="shenzhenStocksTrigger">
+                  <p>深市</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="gemStocksTrigger">
+                  <p>创业板</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active" id="stocksButton">
+              <p>个股走势</p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                  <div class="input-group" data-widget="sidebar-search">
+                    <input class="form-control form-control-sidebar" type="search" placeholder="股票代码" aria-label="Search" id="stock-search-input">
+                    <div class="input-group-append">
+                      <button class="btn btn-sidebar" id="search-button">搜索</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid" id="stock-table-container">
+        <div id="stock-table" class="stock-table"></div>
+        <!-- Stock chart -->
+        <div class="row mt-4">
+          <div class="col">
+            <canvas id="stock-chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content -->
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      <a href="https://github.com/star-straw">Prod by stars 202130540047</a>
+    </div>
+    <!-- Default to the left -->
+    <strong><a href="https://www.scut.edu.cn">SCUT</a></strong>
+  </footer>
+</div>
+<!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<script src="../plugins/chart.js/Chart.js"></script>
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../plugins/js/adminlte.min.js"></script>
+<!--self js-->
+<script src="../assets/js/stocks_scripts.js"></script>
+<script src="../assets/js/button_scripts.js"></script>
+</body>
+</html>
